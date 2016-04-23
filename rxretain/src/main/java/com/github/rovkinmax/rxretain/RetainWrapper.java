@@ -1,7 +1,6 @@
 package com.github.rovkinmax.rxretain;
 
 import android.annotation.SuppressLint;
-import android.app.Fragment;
 import android.os.Bundle;
 
 import rx.Observable;
@@ -12,6 +11,7 @@ import rx.Subscription;
 import rx.exceptions.OnErrorNotImplementedException;
 import rx.functions.Action0;
 import rx.functions.Action1;
+import android.support.v4.app.Fragment;
 
 /**
  * @author Rovkin Max

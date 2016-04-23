@@ -1,7 +1,8 @@
 package com.github.rovkinmax.rxretainexample
 
 import android.app.Activity
-import android.app.FragmentManager
+import android.support.v4.app.FragmentManager
+import android.support.v7.app.AppCompatActivity
 import com.github.rovkinmax.rxretain.EmptySubscriber
 import com.github.rovkinmax.rxretain.RetainFactory
 import com.github.rovkinmax.rxretain.RetainWrapper
@@ -32,9 +33,9 @@ class SimpleActivityTest {
     private lateinit var fragmentManager: FragmentManager
     @Before
     fun setUp() {
-        val controller = Robolectric.buildActivity(Activity::class.java).create().start().visible()
+        val controller = Robolectric.buildActivity(AppCompatActivity::class.java).create().start().visible()
         val activity = controller.get()
-        fragmentManager = activity.fragmentManager
+        fragmentManager = activity.supportFragmentManager
     }
 
     @Test

@@ -1,6 +1,6 @@
 package com.github.rovkinmax.rxretain;
 
-import android.app.FragmentManager;
+import android.support.v4.app.FragmentManager;
 
 import rx.Observable;
 import rx.Subscriber;

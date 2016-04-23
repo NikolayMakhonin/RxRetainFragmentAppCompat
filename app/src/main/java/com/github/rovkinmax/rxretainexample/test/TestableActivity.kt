@@ -2,12 +2,13 @@ package com.github.rovkinmax.rxretainexample.test
 
 import android.app.Activity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import java.util.*
 
 /**
  * @author Rovkin Max
  */
-open class TestableActivity : Activity() {
+open class TestableActivity : AppCompatActivity() {
     val listMethods = ArrayList<String>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

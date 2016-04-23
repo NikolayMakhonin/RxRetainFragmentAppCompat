@@ -1,13 +1,14 @@
 package com.github.rovkinmax.rxretainexample
 
 import android.app.Activity
-import android.app.FragmentManager
 import android.content.Intent
 import android.support.test.InstrumentationRegistry
 import android.support.test.filters.SdkSuppress
 import android.support.test.rule.ActivityTestRule
 import android.support.test.runner.AndroidJUnit4
 import android.support.test.uiautomator.UiDevice
+import android.support.v4.app.FragmentManager
+import android.support.v7.app.AppCompatActivity
 import com.github.rovkinmax.rxretain.RetainFactory
 import com.github.rovkinmax.rxretainexample.test.*
 import com.robotium.solo.Solo
@@ -30,7 +31,7 @@ class RotationActivityTest {
     val rule = ActivityTestRule<TestableActivity>(TestableActivity::class.java, false, false)
 
     private lateinit var fragmentManager: FragmentManager
-    private lateinit var activity: Activity
+    private lateinit var activity: AppCompatActivity
     private lateinit var device: UiDevice
     private lateinit var basePackage: String
     private lateinit var solo: Solo
@@ -45,7 +46,7 @@ class RotationActivityTest {
         activity = rule.launchActivity(Intent(context, TestableActivity::class.java))
         solo = Solo(InstrumentationRegistry.getInstrumentation(), activity)
         basePackage = activity.packageName
-        fragmentManager = activity.fragmentManager
+        fragmentManager = activity.supportFragmentManager
         clearFragments()
     }
 
