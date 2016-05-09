@@ -1,1 +1,1 @@
-include ':app', ':rxretain'
+include ':app', ':rxretain_appcompat'
