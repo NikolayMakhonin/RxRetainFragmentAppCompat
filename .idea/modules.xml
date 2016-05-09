@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/RxRetainFragmentAppCompat_.iml" filepath="$PROJECT_DIR$/RxRetainFragmentAppCompat_.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/rxretain_appcompat/rxretain_appcompat.iml" filepath="$PROJECT_DIR$/rxretain_appcompat/rxretain_appcompat.iml" />
     </modules>
   </component>
