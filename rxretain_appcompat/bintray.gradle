@@ -3,6 +3,8 @@ apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'maven-publish'
 
 
+version='1.0.1'
+
 def vName = project.property('version')
 def libName = project.property('name')
 group = project.property('group')
@@ -26,7 +28,7 @@ bintray {
     pkg {
         name = libName
         userOrg = user
-        repo = libName
+        repo = 'maven'
 
         websiteUrl = project.property('siteUrl')
         vcsUrl = project.property('gitUrl')
@@ -34,9 +36,9 @@ bintray {
 
         publicDownloadNumbers = true
         version {
-            name = project.version
+            name = '1.0.1'
             desc = ''
-            vcsTag = project.version
+            vcsTag = '1.0.1'
             attributes = ['gradle-plugin': 'com.use.less:com.use.less.gradle:gradle-useless-plugin']
             //Optional version-level attributes
         }
