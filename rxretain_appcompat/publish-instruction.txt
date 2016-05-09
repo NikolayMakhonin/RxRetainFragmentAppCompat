@@ -1,0 +1,3 @@
+//gradlew clean build bintrayUpload -PbintrayUser=<user-name> -PbintrayApiKey=<api-key> -PgitUrl=<git-url.git> -PsiteUrl=<git-url> -Puser=<user-name> -Pemail=<email> -PdryRun=false --info --stacktrace
+
+gradlew clean build bintrayUpload -PbintrayUser=<юзернейм на bintray> -PbintrayKey=<api ключ с bintray> -PdryRun=false
